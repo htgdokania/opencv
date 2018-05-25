@@ -1,0 +1,23 @@
+import cv2
+import numpy as np
+img=cv2.imread('1',1)
+logo=cv2.imread('logo.png',1)
+cv2.rectangle(img,(0,0),(273,182),(0,0,0),-1)
+cv2.imshow('img',img)
+cv2.circle(img,(130,55),20,(0,0,255),5)
+cv2.imshow('img2',img)
+cv2.circle(img,(105,96),20,(0,255,0),5)
+cv2.imshow('img3',img)
+cv2.circle(img,(155,96),20,(255,0,0),5)
+cv2.imshow('img3',img)
+cv2.line(img,(123,70),(141,72),(0,0,0),14)
+cv2.line(img,(111,76),(126,100),(0,0,0),14)
+cv2.line(img,(144,81),(168,80),(0,0,0),15)
+cv2.circle(img,(123,81),10,(0,0,0),-1)
+font=cv2.FONT_HERSHEY_SIMPLEX
+cv2.putText(img,'by-HTG',(7,160),font,1,(255,255,255),2)
+cv2.putText(img,'Opencv-logo',(0,30),font,1,(255,255,255),2)
+cv2.imshow('img4',img)
+cv2.imshow('actuallogo',logo)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
