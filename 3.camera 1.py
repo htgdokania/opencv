@@ -2,7 +2,8 @@ import cv2
 import numpy as np
 
 cap=cv2.VideoCapture(0)
-fourcc=cv2.VideoWriter_fourcc(*'divx')
+#fourcc=cv2.VideoWriter_fourcc(*'divx')
+fourcc = cv2.cv.CV_FOURCC(*'XVID')
 out1=cv2.VideoWriter('output.mp4',fourcc,30.0,(640,480))
 
 out=cv2.VideoWriter('output1.mp4',fourcc,30.0,(640,480))
